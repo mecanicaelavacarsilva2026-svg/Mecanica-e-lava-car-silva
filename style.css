@@ -1,27 +1,22 @@
+/* --- Ajustes Visuais e Botões --- */
 
-:root { --primary-red: #e60000; --bg-black: #0d0d0d; --text-white: #ffffff; }
+/* Destacando a frase principal (Hero) */
+.hero h1 { font-size: 3.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+.hero p { font-size: 1.5rem; background: rgba(0,0,0,0.4); padding: 10px; border-radius: 8px; }
 
-body { background-color: var(--bg-black); color: var(--text-white); margin: 0; font-family: sans-serif; }
-
-nav { display: flex; justify-content: space-between; padding: 15px 5%; background: #000; position: sticky; top: 0; }
-nav ul { display: flex; list-style: none; }
-nav ul li { margin-left: 20px; }
-nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
-
-.hero { 
-    height: 80vh; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/img/fundo-hero.jpg') center/cover;
+/* Transformando "Orçamento" em botões chamativos */
+.btn-sm { 
+    display: inline-block; 
+    margin-top: 20px; 
+    padding: 12px 25px; 
+    background: var(--primary-red); 
+    color: #fff; 
+    text-decoration: none; 
+    font-weight: bold; 
+    border-radius: 50px; /* Botão arredondado */
+    transition: transform 0.3s ease; 
 }
+.btn-sm:hover { transform: scale(1.05); }
 
-.btn { background: var(--primary-red); padding: 15px 30px; text-decoration: none; color: #fff; border-radius: 5px; font-weight: bold; }
-
-.services-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px 5%; }
-.service-card { background: #1a1a1a; padding: 20px; border-left: 4px solid var(--primary-red); }
-.btn-sm { display: inline-block; margin-top: 15px; color: var(--primary-red); font-weight: bold; text-decoration: none; }
-
-.whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; padding: 15px; border-radius: 50px; color: #fff; text-decoration: none; font-weight: bold; }
+/* Espaçamento do Sobre Nós */
+#sobre { padding-top: 100px; margin-top: 50px; }
